@@ -6,7 +6,13 @@
 172.31.24.228 ansible_ssh_user='ec2-user'
 
 [db]
+<<<<<<< HEAD
 172.31.23.48 ansible_ssh_user='ubuntu' 
 
 [lb]  
+=======
+172.31.23.48 ansible_ssh_user='ec2-user' 
+
+[lb]
+>>>>>>> b57681eab1b845f3ca96f158886d5797704cfb45
 172.31.23.47 ansible_ssh_user='ubuntu'
