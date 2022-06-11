@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
 - name: update web, nfs 
   hosts: webservers, nfs 
-=======
-- name: update web, nfs and db servers
-  hosts: webservers, nfs, db
->>>>>>> b57681eab1b845f3ca96f158886d5797704cfb45
   remote_user: ec2-user
   become: yes
   become_user: root
@@ -15,13 +10,8 @@
         name: wireshark
         state: latest
 
-<<<<<<< HEAD
 - name: update lb, db
   hosts: lb, db
-=======
-- name: update LB server
-  hosts: lb
->>>>>>> b57681eab1b845f3ca96f158886d5797704cfb45
   remote_user: ubuntu
   become: yes
   become_user: root
@@ -34,6 +24,3 @@
       apt:
         name: wireshark
         state: latest
-
-   
-  
