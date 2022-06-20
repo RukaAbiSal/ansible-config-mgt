@@ -4,11 +4,3 @@
   tags:
     - always
 
-- name: import env-var file 
-  import_playbook: ../Dynamic-assignments/env-vars.yml 
-  tags:
-    - always
-  
-- name: import lb file 
-  import_playbook: ../static-assignments/lb.yml 
-  when: load_balancer_is_required 
