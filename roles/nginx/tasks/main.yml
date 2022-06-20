@@ -38,7 +38,7 @@ blockinfile:
     {{ item.ip }} {{ item.name}}
   loop:
    - { name: web1, ip: 172.31.23.38}
-   - { name: web1, ip: 172.31.24.228}
+   - { name: web2, ip: 172.31.24.228}
    
 
 # Nginx setup.
