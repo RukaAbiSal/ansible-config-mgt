@@ -1,8 +1,11 @@
 ---
-- name: import dynamic variables 
-  tasks:
+- name: import common file 
   import_playbook: ../static-assignments/common.yml 
-  import: ../dynamic-assignments/env-vars.yml
+  tags:
+    - always
+
+- name: import env-vars file
+  import_playbook: ../Dynamic-assignments/inventory/inventory/env-vars.yml
   tags:
     - always
 
